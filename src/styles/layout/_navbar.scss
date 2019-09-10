@@ -1,0 +1,36 @@
+nav {
+  height: 90px !important;
+  line-height: 90px !important;
+  position: relative;
+}
+
+.nav--light {
+  background-color: $color-white !important;
+  color: $color-primary !important;
+}
+
+.nav--dark {
+  background-color: $color-primary-dark  !important;
+  color: $color-white !important;
+}
+
+.nav-wrapper {
+  &__title {
+    margin-left: 50px;
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+  &__theme {
+    float: right;
+    margin-right: 50px;
+    cursor: pointer;
+
+    &--text {
+      margin-left: 10px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}
+  

@@ -1,0 +1,221 @@
+.home {
+  padding: 50px 60px 0px 60px;
+  min-height: calc(100% - 90px);
+
+  .row {
+    margin-bottom: 0px;
+  }
+
+  .loader {
+    padding: 25%;
+
+    svg {
+      display: block;
+      margin: auto;
+    }
+  }
+
+  .search-filter {
+    margin-bottom: 10px;
+    padding: 0px 20px;
+  
+    .filter-float {
+      float: right !important;
+    }
+  }
+  
+  .card {
+    margin: 40px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    
+    img {
+      border-radius: 5px 5px 0 0 !important;
+      height: 150px;
+      object-fit: cover;
+    }
+  
+    .card-content {
+      
+      .card-title {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        font-weight: 600;
+      }
+      
+      .card-info {
+        font-weight: 600;
+      }
+    }
+  
+    .card-content--light {
+      color: $color-primary;
+    }
+  
+    .card-content--dark {
+      color: $color-white;
+      background-color: $color-primary-dark;
+    }
+  }
+}
+
+.home--light {
+  background-color: $color-white !important;
+  color: $color-primary !important;
+}
+
+.home--dark {
+  background-color: $color-background-dark !important;
+  color: $color-white !important;
+}
+
+// Search and filter components
+
+.search {
+  .styled-component__StyledInput-sc-1dsackt-0 {
+    border-bottom: none !important;
+    height: 64px !important;
+    font-size: 14px !important;
+    padding-left: 10px !important;
+    font-family: Nunito !important;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 5px !important;
+    margin: 0px !important;
+  }
+}
+
+.search--light {
+  .styled-component__StyledInput-sc-1dsackt-0 {
+    background-color: $color-white !important;
+  }
+
+  .styled-component__StyledInput-sc-1dsackt-0::placeholder {
+    color: $color-auxiliary;
+    opacity: 1;
+  }
+}
+
+.search--dark {
+  .styled-component__StyledInput-sc-1dsackt-0 {
+    color: $color-white !important;
+    background-color: $color-primary-dark !important;
+  }
+
+  .styled-component__StyledInput-sc-1dsackt-0::placeholder {
+    color: $color-white;
+    opacity: 1;
+  }
+}
+
+.search > div {
+  .react-search-box-dropdown {
+    position: absolute;
+    z-index: 1;
+    margin-top: 75px;
+  }
+}
+
+.search--dark > div {
+  .react-search-box-dropdown {
+    color: $color-white;
+
+    ul > li {
+      background-color: $color-primary-dark;
+      border: 1px solid $color-background-dark;
+    }
+
+    ul > li:hover {
+      background-color: $color-background-dark;
+    }
+  }
+}
+
+.filter {
+  .filter--light__control {
+    border-color:$color-white !important;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .filter--light__control--is-focused {
+    border-color:$color-white !important;
+  }
+
+  .filter--light__option--is-focused {
+    background-color: $color-auxiliary;
+  }
+
+  .filter--light__placeholder {
+    color: $color-auxiliary;
+  }
+
+  .filter--light__indicator-separator,
+  .filter--dark__indicator-separator {
+    display: none;
+  }
+
+  .filter--dark__control {
+    background-color: $color-primary-dark;
+    border-color: $color-primary-dark !important;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .filter--dark__placeholder {
+    color: $color-white;
+  }
+
+  .filter--dark__menu {
+    background-color: $color-primary-dark;
+  }
+
+  .filter--dark__option--is-focused {
+    background-color: $color-background-dark;
+  }
+}
+
+
+
+// .filter {
+//   .css-yk16xz-control {
+//     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+//     border-radius: 5px;
+
+//     .css-1wa3eu0-placeholder {
+//       color: hsl(0, 1%, 76%);
+//     }
+
+//     .css-1okebmr-indicatorSeparator {
+//       display: none;
+//     }
+//   }
+// }
+
+// .filter--light__control
+
+// .filter--light {
+//   .css-yk16xz-control {
+//     border-color: $color-background;
+
+//     .css-1wa3eu0-placeholder {
+//       color: hsl(0, 1%, 76%);
+//     }
+//   }
+// }
+
+// .filter--dark {
+//   .css-yk16xz-control {
+//     background-color: $color-primary-dark;
+//     border-color: $color-primary-dark;
+
+//     .css-yk16xz-control {
+//       background-color: $color-primary-dark;
+//       border-color: $color-primary-dark;
+//     }
+
+//     .css-1wa3eu0-placeholder {
+//       color: hsl(0, 1%, 76%);
+//     }
+//   }
+// }
